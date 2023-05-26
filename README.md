@@ -9,7 +9,7 @@ Suggested normalizing method:
 5. Calculate formant peaks using e.g. `scipy.signal.find_peaks`.
 
 
-To search latent space for formants targets:
+To search latent space for formant targets:
 1. Determine spectral peak locations for each LPC spectrum using e.g. `scipy.signal.find_peaks`.
 2. Train sklearn models (e.g. `KNeighboursRegressor` with Gaussian kernel having width 0.5) to predict first two spectral peaks (F1 and F2) from latent features.
 3. Place models in dictionary, and pass to `normalize` function along with initial latent point, and F1, F2 targets. 
