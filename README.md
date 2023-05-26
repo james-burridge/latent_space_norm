@@ -12,4 +12,4 @@ Suggested normalizing method:
 To search latent space for formants targets:
 1. Determine spectral peak locations for each LPC spectrum
 2. Train sklearn models (e.g. KNeighboursRegressor with Gaussian kernel width 0.5) to predict first two spectral peaks (F1 and F2) from latent features
-3. Place models in dictionary, and pass to \verb{normalize} function along with initial latent point, and F1, F2 targets 
+3. Place models in dictionary, and pass to `normalize` function along with initial latent point, and F1, F2 targets 
